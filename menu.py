@@ -1,4 +1,9 @@
 import time
+
+import entradas as en
+import comida as co
+import cupones as cu
+
 def menu():
     while True:
         print("1.- Comprar entradas")
