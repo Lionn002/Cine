@@ -12,11 +12,11 @@ def menu():
         print("4.- Salir")
         op = int(input("Ingrese su opción -> "))
         if op == 1:
-            return entradas()
+            return en()
         elif op == 2:
-            return comida()
+            return co()
         elif op == 3:
-            return cupon()
+            return cu()
         elif op == 4:
             print("Cerrando Sesión...")
             time.sleep(.5)
