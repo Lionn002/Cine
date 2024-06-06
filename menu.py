@@ -10,17 +10,22 @@ def menu():
         print("2.- Comprar comida")
         print("3.- Canjear cupon")
         print("4.- Salir")
+        op = 0
         op = int(input("Ingrese su opción -> "))
         if op == 1:
-            return en()
+            op = 0
+            return en.entradas()
         elif op == 2:
+            op = 0
             return co()
         elif op == 3:
+            op = 0
             return cu()
         elif op == 4:
+            op = 0
             print("Cerrando Sesión...")
             time.sleep(.5)
             break
         else:
             print("La opción ingresada no es valida.")
-
+menu()
