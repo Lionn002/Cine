@@ -14,7 +14,7 @@ def menu():
         op = int(input("Ingrese su opción -> "))
         if op == 1:
             op = 0
-            return en.entradas()
+            return en.gEntradas()
         elif op == 2:
             op = 0
             return co()

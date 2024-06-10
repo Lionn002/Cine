@@ -17,4 +17,9 @@ def entradas():
         else: 
             print("Ignrese una opción valida.")
 def gEntradas():
-    
+    cantEntradas = entradas()
+    if cantEntradas == 0:
+        return None
+    elif cantEntradas is not None:
+        asientosSel = bu.gestionarAsientos(cantEntradas)
+        print(f"Asientos seleccionados: {', '.join(asientosSel)}")
