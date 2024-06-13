@@ -10,6 +10,7 @@ def menu():
         print("[1] Comprar entradas")
         print("[2] Comprar comida")
         print("[3] Canjear cupon")
+        print("[4] Conectar Cuenta")
         print("[4] Salir")
         op = 0
         op = int(input("Ingrese su opción -> "))
