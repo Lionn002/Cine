@@ -6,15 +6,15 @@ import cupones as cu
 
 def menu():
     while True:
-        print("1.- Comprar entradas")
-        print("2.- Comprar comida")
-        print("3.- Canjear cupon")
-        print("4.- Salir")
+        print("[1] Comprar entradas")
+        print("[2] Comprar comida")
+        print("[3] Canjear cupon")
+        print("[4] Salir")
         op = 0
         op = int(input("Ingrese su opción -> "))
         if op == 1:
             op = 0
-            return en.gEntradas()
+            return en.entradas()
         elif op == 2:
             op = 0
             return co()
