@@ -3,6 +3,7 @@ import time
 import entradas as en
 import comida as co
 import cupones as cu
+import cuenta as 
 
 def menu():
     while True:
@@ -22,6 +23,9 @@ def menu():
             op = 0
             return cu()
         elif op == 4:
+            op = 0
+            return es
+        elif op == 5:
             op = 0
             print("Cerrando Sesión...")
             time.sleep(.5)
