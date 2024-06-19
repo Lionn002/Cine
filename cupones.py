@@ -20,10 +20,10 @@ def cuenta():
         if cuenta_registrada == 1: 
             print("------------------------")
             while True:
-                rut = input("Ingrese el RUT de la empresa (o 'salir' para terminar): ")
+                rut = input("Ingrese el RUT (o 'salir' para terminar): ")
                 if rut.lower() == 'salir':
                     break
-                nombre = input("Ingrese el nombre de la empresa: ")
+                nombre = input("Ingrese su nombre: ")
                 Datos= {"rut": rut, "nombre": nombre}
                 Cuentas.append(Datos)
                 print(f"Cuenta registrada: {Datos}")
