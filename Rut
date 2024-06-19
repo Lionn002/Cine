@@ -1,1 +1,25 @@
+import csv
+import json 
+Cuentas = []
+ruts = []
+#me falta hacer un rut verificador y hacer la opcion 2
+def cuenta():
+    while True: 
+        print ("Ingrese su cuenta de Cinepolis ")
+        print("1.-Si tengo una cuenta registrada con mi rut.")
+        print("2.-Quiero crear una cuenta con mi rut. ")
+        cuenta_registrada = int(input("Ingrese una opción:"))
+        if cuenta_registrada == 1: 
+            print("------------------------")
+            while True:
+                rut = input("Ingrese el RUT (o 'salir' para terminar): ")
+                if rut.lower() == 'salir':
+                    break
+                nombre = input("Ingrese su nombre: ")
+                Datos= {"rut": rut, "nombre": nombre}
+                Cuentas.append(Datos)
+                print(f"Cuenta registrada: {Datos}")
+
+            
+cuenta()
 
