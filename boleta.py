@@ -2,6 +2,7 @@ import rutt
 import entradas
 import comida
 import cupones
+import pago
 
 def generar_boleta(rut):
     print(f"RUT: {rut}")
@@ -29,6 +30,8 @@ def generar_boleta(rut):
     print(f"Descuento: ${descuento:.2f}")
     print(f"IVA: ${iva:.2f}")
     print(f"Total: ${total:.2f}")
+
+    pago.seleccionar_metodo_pago(total)
 
 if __name__ == "__main__":
     rut = input("Ingrese su RUT sin puntos ni guion: ")
