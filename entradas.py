@@ -1,7 +1,9 @@
 import butacas as bu
 import time as t
 
+
 def entradas(): 
+    import rutt
     while True:
         print("Seleccione la pelicula\n")
         print("[1] El planeta de los simios: Nuevo reino")
@@ -115,3 +117,4 @@ def asientos(op, en, val, iva, total):
     butacas = bu.seleccionar_butacas(butacas, en)
     print("Mapa final de butacas:")
     bu.mostrar_mapa(butacas)
+
