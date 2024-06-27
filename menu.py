@@ -28,4 +28,3 @@ def menu():
             break
         else:
             print("La opción ingresada no es valida.")
-menu()
