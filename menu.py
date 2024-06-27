@@ -3,14 +3,12 @@ import time
 import entradas as en
 import comida as co
 import cupones as cu
-import cuenta as 
 
 def menu():
     while True:
         print("[1] Comprar entradas")
         print("[2] Comprar comida")
         print("[3] Canjear cupon")
-        print("[4] Conectar Cuenta")
         print("[4] Salir")
         op = 0
         op = int(input("Ingrese su opción -> "))
@@ -24,9 +22,6 @@ def menu():
             op = 0
             return cu()
         elif op == 4:
-            op = 0
-            return es
-        elif op == 5:
             op = 0
             print("Cerrando Sesión...")
             time.sleep(.5)
