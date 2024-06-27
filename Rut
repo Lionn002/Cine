@@ -1,7 +1,6 @@
-#no se como hacer que este lo de como inicion del todo el codigo por si acaso
-
 import csv
 import json
+import menu as me
 Cuentas = []
 ruts = set()
 
@@ -71,7 +70,7 @@ def cuenta():
                 break
         elif submenu_rut == 3:
             print("Adios")
-            break
+            return me.menu()
 
 cuenta()
 
