@@ -11,7 +11,8 @@ def comida():
         
         if op_principal == 5:
             print("!!!! GRACIAS POR USAR EL MENU DE COMIDAS !!!!")
-            break
+            import menu as me
+            return me.menu()
 
         if op_principal == 1:
             while True:
