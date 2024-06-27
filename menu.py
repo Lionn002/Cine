@@ -1,10 +1,9 @@
 import time
 
-import entradas as en
-import comida as co
-import cupones as cu
-
 def menu():
+    import entradas as en
+    import comida as co
+    import cupones as cu
     while True:
         print("[1] Comprar entradas")
         print("[2] Comprar comida")
@@ -17,10 +16,10 @@ def menu():
             return en.entradas()
         elif op == 2:
             op = 0
-            return co()
+            return co.comida()
         elif op == 3:
             op = 0
-            return cu()
+            return cu.aplicar_descuentos()
         elif op == 4:
             op = 0
             print("Cerrando Sesión...")
@@ -28,3 +27,6 @@ def menu():
             break
         else:
             print("La opción ingresada no es valida.")
+
+if __name__ == "__main__":
+    menu()
