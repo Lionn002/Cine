@@ -51,6 +51,3 @@ def aplicar_descuentos():
         elif opcion == 2:
             print("Adios")
             break
-
-if __name__ == "__main__":
-    aplicar_descuentos()
